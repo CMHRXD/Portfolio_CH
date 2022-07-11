@@ -2,8 +2,8 @@ import React from 'react';
 import Restaurant from '../public/img/restaurant.png';
 import TravelAgency from '../public/img/travelagency.png';
 import Aph from '../public/img/aph.png';
-import qs from '../public/img/insurance-Quoter.png';
-import nhs from '../public/img/Neumaticos-hs.png';
+import iq from '../public/img/iq.png';
+import nhs from '../public/img/nhs.png';
 
 const Work = () => {
     return (
@@ -67,7 +67,7 @@ const Work = () => {
                         </div>
                     </div>
 
-                    <div style={{ backgroundImage: `url(${qs})` }} className=' shadow-lg shadow-[#0a192f] group container rounded-md flex justify-center items-center mx-auto personal-content'>
+                    <div style={{ backgroundImage: `url(${iq})` }} className=' shadow-lg shadow-[#0a192f] group container rounded-md flex justify-center items-center mx-auto personal-content'>
                         {/*Hover Efect*/}
                         <div className='opacity-0 group-hover:opacity-100'>
                             <span className='text-2xl font-bold text-white tracking-wider '>
