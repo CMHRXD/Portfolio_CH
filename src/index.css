@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    body{
+        @apply font-mono
+    }
+    li{
+        @apply px-4;
+        @apply cursor-pointer;
+    }
+}
+.personal-content{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+}
+
+.personal-content:hover{
+    background-image: linear-gradient(
+        to right,
+        rgb(24, 60, 102),
+        hsla(253, 88%, 27%, 0.5)
+    )!important;
+}
