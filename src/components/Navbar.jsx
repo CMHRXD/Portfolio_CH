@@ -3,7 +3,7 @@ import { FaBars, FaTimes, FaGithub, FaLinkedin} from 'react-icons/fa';
 import { HiOutlineMail} from 'react-icons/hi';
 import {BsFillPersonLinesFill} from 'react-icons/bs';
 import logo from '../public/img/Logo CH.png';
-
+import resume from '../public/img/Cristian_Hernandez_Resume.pdf';
 import {Link} from 'react-scroll';
 
 
@@ -17,11 +17,11 @@ const Navbar = () => {
             </div>
             {/*Menu*/}
             <ul className='hidden md:flex'>
-                <li><Link to='home' smooth={true} duration={500}>Home</Link></li>
-                <li><Link to='about' smooth={true} duration={500}>About</Link></li>
-                <li><Link to='skills' smooth={true} duration={500}>Skills</Link></li>
-                <li><Link to='work' smooth={true} duration={500}>Works</Link></li>
-                <li><Link to='contact' smooth={true} duration={500}>Contact</Link></li>
+                <li><Link to='home' className='' smooth={true} duration={500}>Home</Link></li>
+                <li><Link to='about' className='' smooth={true} duration={500}>About</Link></li>
+                <li><Link to='skills' className='' smooth={true} duration={500}>Skills</Link></li>
+                <li><Link to='work' className='' smooth={true} duration={500}>Works</Link></li>
+                <li><Link to='contact' className='' smooth={true} duration={500}>Contact</Link></li>
             </ul>
 
             {/*Mobile Menu*/}
@@ -41,7 +41,7 @@ const Navbar = () => {
             <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
                 <ul>
                     <li className='bg-blue-500 w-[160px] h-[60px] flex items-center ml-[-100px] hover:ml-[0px] duration-300'>
-                        <a href="" className='text-lg font-bold flex justify-between items-center w-full text-gray-300'>
+                        <a href="https://www.linkedin.com/in/cristian-hernandez-402090245/" className='text-lg font-bold flex justify-between items-center w-full text-gray-300'>
                             Linkedin <FaLinkedin size={35}/> 
                         </a>
                     </li>
@@ -56,7 +56,7 @@ const Navbar = () => {
                         </a>
                     </li>
                     <li className='bg-slate-600 w-[160px] h-[60px] flex items-center ml-[-100px] hover:ml-[0px] duration-300'>
-                        <a href="" className='text-lg font-bold flex justify-between items-center w-full text-gray-300'>
+                        <a href={resume} className='text-lg font-bold flex justify-between items-center w-full text-gray-300'>
                             Resume <BsFillPersonLinesFill size={35}/> 
                         </a>
                     </li>
